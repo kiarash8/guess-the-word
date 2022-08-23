@@ -1,19 +1,19 @@
 import { Box, Input } from "@elements";
 import React, { useEffect, useRef, useState } from "react";
 
-export type MutipleInputProps = {
+export type MultipleInputProps = {
   length: number;
   value: string;
   onChange: (value: string) => void;
   regxPattern?: RegExp;
 };
 
-export function MutipleInput({
+export function MultipleInput({
   length,
   value,
   onChange,
   regxPattern,
-}: MutipleInputProps) {
+}: MultipleInputProps) {
   const firstInput = useRef<HTMLInputElement>(null);
   const [values, setValues] = useState<Array<string>>(Array(length).fill(""));
 

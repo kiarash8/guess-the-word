@@ -1,7 +1,7 @@
 import React, { FC, Fragment, useContext, useMemo, useState } from "react";
 import { Box, Button } from "@elements";
 import GameContext from "../../game-context";
-import { MutipleInput } from "@components/mutiple-input";
+import { MultipleInput } from "@components/multiple-input";
 import { Result } from "./result";
 import { GuessedList, GuessItem } from "./guessed-list";
 
@@ -66,7 +66,7 @@ export const Playground: FC = () => {
       ) : (
         <Fragment>
           <Box className="mb-3">
-            <MutipleInput
+            <MultipleInput
               length={word.length}
               value={inputValue}
               onChange={handleChange}
