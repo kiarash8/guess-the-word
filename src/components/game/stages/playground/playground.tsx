@@ -6,7 +6,7 @@ import { Result } from "./result";
 import { GuessedList, GuessItem } from "./guessed-list";
 
 const MAX_GUESSING_TURN = 3;
-const REGX = new RegExp(/^[a-zA-Z]+$/g);
+const REGX = new RegExp(/^[a-zA-Z]+$/);
 
 export const Playground: FC = () => {
   const orderContext = useContext(GameContext);
@@ -24,11 +24,11 @@ export const Playground: FC = () => {
   };
 
   const disableSubmit = useMemo(() => {
-    // if (inputValue.length < word.length) return true;
+    if (inputValue.length < word.length) return true;
 
-    // const isValid = REGX.test(inputValue);
+    const isValid = REGX.test(inputValue);
 
-    // return !isValid;
+    return !isValid;
     return false;
   }, [inputValue]);
 
