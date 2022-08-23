@@ -29,11 +29,10 @@ export const Playground: FC = () => {
     const isValid = REGX.test(inputValue);
 
     return !isValid;
-    return false;
   }, [inputValue]);
 
   const submit = () => {
-    const matchedCount = getMatchedCount(inputValue);
+    const matchedCount = getMatchedCount(inputValue.toLocaleLowerCase());
 
     setGuessed([
       ...guessed,
