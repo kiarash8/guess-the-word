@@ -1,6 +1,6 @@
 # GUESS THE WORD!
 
-Guess The Word is a word guessing game. I created this because I wanted to show a quick example of using components-based design, and some of my opinions about how the project structure should look.
+Guess The Word is a word guessing game ([Demo](https://kiarash8.github.io/guess-the-word/)). I created this because I wanted to show a quick example of using components-based design, and some of my opinions about how the project structure should look.
 
 ### Game Rules
 

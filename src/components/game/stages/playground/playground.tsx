@@ -73,8 +73,7 @@ export const Playground: FC = () => {
               regxPattern={REGX}
             />
           </Box>
-          <Button
-            size="medium" onClick={submit} disabled={disableSubmit}>
+          <Button size="medium" onClick={submit} disabled={disableSubmit}>
             submit
           </Button>
         </Fragment>
