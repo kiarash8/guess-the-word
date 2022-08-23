@@ -24,11 +24,12 @@ export const Playground: FC = () => {
   };
 
   const disableSubmit = useMemo(() => {
-    if (inputValue.length < word.length) return true;
+    // if (inputValue.length < word.length) return true;
 
-    const isValid = REGX.test(inputValue);
+    // const isValid = REGX.test(inputValue);
 
-    return !isValid;
+    // return !isValid;
+    return false;
   }, [inputValue]);
 
   const submit = () => {
@@ -72,7 +73,8 @@ export const Playground: FC = () => {
               regxPattern={REGX}
             />
           </Box>
-          <Button size="medium" onClick={submit} disabled={disableSubmit}>
+          <Button
+            size="medium" onClick={submit} disabled={disableSubmit}>
             submit
           </Button>
         </Fragment>
