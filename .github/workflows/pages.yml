@@ -36,7 +36,6 @@ jobs:
           node-version: "16"
           cache: 'npm'
           cache-dependency-path: './pnpm-lock.yaml'
-        run: npm install --global pnpm
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v1
@@ -49,7 +48,9 @@ jobs:
       - name: Restore cache
         uses: actions/cache@v3
       - name: Install dependencies
-        run: pnpm install
+        run: |
+          npm install --global pnpm
+          pnpm install
       - name: Build with Next.js
         run: pnpm run build
       - name: Static HTML export with Next.js
