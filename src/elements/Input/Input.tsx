@@ -10,11 +10,6 @@ export interface InputProps
    */
   textAlign?: TextAlign;
   /**
-   * The size of the component.
-   * @default 'medium'
-   */
-  // size?: Size;
-  /**
    * If `true`, the input will take up the full width of its container.
    * @default true
    */
